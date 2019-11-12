@@ -1,0 +1,101 @@
+@media screen and (max-width: 1024px) {
+  header {
+    .header__content {
+      .header__hello {
+        h1 {
+          font-size: 40px;
+          &::after {
+            height: 1px;
+          }
+        }
+        h3 {
+          font-size: 25px;
+        }
+      }
+      .header__list {
+        width: 100%;
+        margin-top: 30px;
+        .header__links {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          list-style: none;
+          height: 300px;
+        }
+      }
+    }
+  }
+  #about {
+    .about__container {
+      .about__wrapper {
+        display: block;
+        .about__img {
+          img {
+            width: 100%;
+            height: 40%;
+          }
+        }
+        .about__summary,
+        .about__contact,
+        .about__img {
+          margin: 20px 0;
+
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    .header__content {
+      .header__hello {
+        h1 {
+          font-size: 30px;
+        }
+        h3 {
+          font-size: 18px;
+        }
+      }
+      .header__list {
+        .header__links {
+          .header__item {
+            .header__link {
+              position: absolute;
+              width: 100px;
+              height: 40px;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+  .heading {
+    height: auto;
+  }
+  #projects {
+    .projects__container {
+      .projects__item {
+        flex-direction: column;
+        a {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+  #education {
+    .education__container {
+      h3 {
+        font-size: 18px;
+      }
+      .inline {
+        font-size: 14px;
+      }
+    }
+  }
+}
