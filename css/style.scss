@@ -40,21 +40,25 @@ body {
     grid-column: 1/13;
     grid-row: 2;
   }
-  #education {
+  #exps {
     grid-column: 1/13;
     grid-row: 3;
   }
-  #skills {
+  #education {
     grid-column: 1/13;
     grid-row: 4;
   }
-  #projects {
+  #skills {
     grid-column: 1/13;
     grid-row: 5;
   }
-  #addinfo {
+  #projects {
     grid-column: 1/13;
     grid-row: 6;
+  }
+  #addinfo {
+    grid-column: 1/13;
+    grid-row: 7;
   }
 }
 
@@ -305,6 +309,26 @@ header {
   grid-template-columns: repeat(12, 1fr);
   margin-bottom: 50px;
   .addinfo__header {
+    @extend .heading__grid;
+    height: auto;
+  }
+  .addinfo__content {
+    @extend .bg__color;
+    color: rgb(53, 53, 53);
+    font-size: 25px;
+    ul {
+      list-style: none;
+      li {
+        margin: 15px;
+      }
+    }
+  }
+}
+#exps {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-bottom: 50px;
+  .exps__header {
     @extend .heading__grid;
     height: auto;
   }

@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" content="Website CV Intern Frontend" />
     <title>Nguyễn Minh Đức - Intern Frontend</title>
-    <link
+    <!-- <link
       rel="shortcut icon"
       href="./img/Header-Logo1500994616801.png"
       type="image/png"
-    />
-    <link rel="apple-touch-icon" href="./img/Header-Logo1500994616801.png" />
+    /> -->
+    <!-- <link rel="apple-touch-icon" href="./img/Header-Logo1500994616801.png" /> -->
     <link rel="stylesheet" href="./css/style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Lato&display=swap"
@@ -101,8 +101,8 @@
                 </li>
                 <li class="about__ctitem">
                   <i class="fas fa-globe-asia"></i
-                  ><a href="http://cv-minhduc.freevnn.com/"
-                    >cv-minhduc.freevnn.com</a
+                  ><a href="http://cv-minhduc-fe.freevnn.com/"
+                    >cv-minhduc-fe.freevnn.com</a
                   >
                 </li>
               </ul>
@@ -110,6 +110,28 @@
           </div>
         </div>
       </section>
+
+      <!-- Experian-->
+      <section id="exps">
+        <div class="exps__header heading">
+          <h1>Experience</h1>
+        </div>
+        <div class="addinfo__content">
+          <h3 style="margin-bottom: 1em;">
+            Công ty TNHH giải pháp kết nối du lịch Việt Nam - Travel Connect
+          </h3>
+          <h5>Công việc</h5>
+          <ul>
+            <li>
+              Thiết kế, xây dựng Layout, Xây dựng CSDL
+            </li>
+            <li>Xử lý logic, giải quyết vấn đề phát sinh</li>
+          </ul>
+          <h5>Thời gian</h5>
+          <p style="margin: 15px;">11/2019 - 3/2020</p>
+        </div>
+      </section>
+
       <!-- Education -->
       <section id="education">
         <div class="education__header heading">
@@ -144,13 +166,14 @@
             <h3>Frameworks & Library</h3>
             <ul class="skills__links">
               <li>ReactJS</li>
-              <li>Jquery</li>
               <li>Bootstrap</li>
+              <li>Ant.Design</li>
             </ul>
           </div>
           <div class="skills__content">
             <h3>Other</h3>
             <ul class="skills__links">
+              <li>Firebase</li>
               <li>Photoshop basic</li>
               <li>Git</li>
             </ul>
@@ -173,13 +196,23 @@
         <div class="projects__container">
           <ul>
             <li class="projects__item">
-              <a href="http://cv-minhduc.freevnn.com/">CV Intern Frontend</a>
+              <a href="http://cv-minhduc.freevnn.com/"
+                >CV Intern Frontend (11/2019)</a
+              >
               <p>Trang web CV sử đụng HTML5/SASS Responsive</p>
             </li>
 
             <li class="projects__item">
-              <a href="http://cv-manutd-shop.freevnn.com/">Shopping Cart</a>
+              <a href="http://cv-mushop.freevnn.com/"
+                >Shopping Cart (11/2019)</a
+              >
               <p>Trang web sử dụng ReactJS Responsive</p>
+            </li>
+            <li class="projects__item">
+              <a href="http://cv-phongtro18.freevnn.com/"
+                >Phòng trọ 18 (4/2020)</a
+              >
+              <p>Trang web sử dụng ReactJS, Redux, Firebase, Responsive</p>
             </li>
           </ul>
         </div>
@@ -207,8 +240,8 @@
       <a href="#" class="scrollTop"><i class="fas fa-arrow-up"></i></a>
     </div>
     <script>
-      $(document).ready(function() {
-        $(window).scroll(function() {
+      $(document).ready(function () {
+        $(window).scroll(function () {
           if ($(this).scrollTop() > 100) {
             $(".scrollTop").fadeIn();
           } else {
@@ -216,16 +249,16 @@
           }
         });
 
-        $(".scrollTop").click(function() {
+        $(".scrollTop").click(function () {
           $("html,body").animate({ scrollTop: 0 }, 500);
           return false;
         });
 
-        $(document).on("click", "a[href^='#']", function() {
+        $(document).on("click", "a[href^='#']", function () {
           event.preventDefault();
           $("html,body").animate(
             {
-              scrollTop: $($.attr(this, "href")).offset().top
+              scrollTop: $($.attr(this, "href")).offset().top,
             },
             500
           );

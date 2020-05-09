@@ -11,7 +11,7 @@ body {
   background-color: #dfe4eb;
 }
 
-.bg__color, #about .about__container .about__wrapper .about__img, #about .about__container .about__wrapper .about__summary, #about .about__container .about__wrapper .about__contact, #education .education__container, #skills .skills__container .skills__content, #projects .projects__container, #addinfo .addinfo__content {
+.bg__color, #about .about__container .about__wrapper .about__img, #about .about__container .about__wrapper .about__summary, #about .about__container .about__wrapper .about__contact, #education .education__container, #skills .skills__container .skills__content, #projects .projects__container, #addinfo .addinfo__content, #exps .addinfo__content {
   -ms-grid-column: 2;
   -ms-grid-column-span: 10;
   grid-column: 2/12;
@@ -20,7 +20,7 @@ body {
   padding: 25px;
 }
 
-.heading__grid, #education .education__header, #skills .skills__header, #projects .projects__header, #addinfo .addinfo__header {
+.heading__grid, #education .education__header, #skills .skills__header, #projects .projects__header, #addinfo .addinfo__header, #exps .exps__header {
   -ms-grid-column: 1;
   -ms-grid-column-span: 12;
   grid-column: 1/13;
@@ -64,7 +64,7 @@ body {
   grid-row: 2;
 }
 
-.wrapperAll #education {
+.wrapperAll #exps {
   -ms-grid-column: 1;
   -ms-grid-column-span: 12;
   grid-column: 1/13;
@@ -72,7 +72,7 @@ body {
   grid-row: 3;
 }
 
-.wrapperAll #skills {
+.wrapperAll #education {
   -ms-grid-column: 1;
   -ms-grid-column-span: 12;
   grid-column: 1/13;
@@ -80,7 +80,7 @@ body {
   grid-row: 4;
 }
 
-.wrapperAll #projects {
+.wrapperAll #skills {
   -ms-grid-column: 1;
   -ms-grid-column-span: 12;
   grid-column: 1/13;
@@ -88,12 +88,20 @@ body {
   grid-row: 5;
 }
 
-.wrapperAll #addinfo {
+.wrapperAll #projects {
   -ms-grid-column: 1;
   -ms-grid-column-span: 12;
   grid-column: 1/13;
   -ms-grid-row: 6;
   grid-row: 6;
+}
+
+.wrapperAll #addinfo {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1/13;
+  -ms-grid-row: 7;
+  grid-row: 7;
 }
 
 header {
@@ -432,6 +440,31 @@ header .header__content .header__list .header__links .header__item .header__link
 }
 
 #addinfo .addinfo__content ul li {
+  margin: 15px;
+}
+
+#exps {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  margin-bottom: 50px;
+}
+
+#exps .exps__header {
+  height: auto;
+}
+
+#exps .addinfo__content {
+  color: #353535;
+  font-size: 25px;
+}
+
+#exps .addinfo__content ul {
+  list-style: none;
+}
+
+#exps .addinfo__content ul li {
   margin: 15px;
 }
 
